@@ -1,0 +1,50 @@
+.membership-page {
+  background-color: #fcfcfc;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+
+.membership-header {
+  background-color: #1a2530;
+  color: white;
+  text-align: center;
+  padding: 5rem 5%;
+}
+
+.membership-header h1 {
+  font-size: 3rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+}
+
+.membership-form-container {
+  max-width: 600px;
+  margin: -3rem auto 0;
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-top: 4px solid #d4af37;
+  position: relative;
+  z-index: 10;
+}
+
+.membership-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.membership-form input, .membership-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.status-message {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}

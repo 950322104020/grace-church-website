@@ -1,0 +1,76 @@
+.give-page {
+  background-color: #f4f7f6;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+
+.give-hero {
+  background-color: #1a2530;
+  color: white;
+  text-align: center;
+  padding: 5rem 5%;
+}
+
+.give-hero h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.give-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.give-container {
+  max-width: 1200px;
+  margin: -3rem auto 0;
+  padding: 0 5%;
+  position: relative;
+  z-index: 10;
+}
+
+.give-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.give-method-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.icon-wrapper {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.give-method-card h2 {
+  color: #1a2530;
+  margin-bottom: 1rem;
+}
+
+.give-method-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.bank-details, .address-details {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 6px;
+  text-align: left;
+  border-left: 3px solid #1a2530;
+}
+
+.bank-details p, .address-details p {
+  margin-bottom: 0.5rem;
+  color: #333;
+}

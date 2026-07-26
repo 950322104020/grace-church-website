@@ -1,0 +1,382 @@
+/* --- Hero Section --- */
+.hero {
+  height: 80vh;
+  background-color: #1a2530;
+  background-image: url('https://images.unsplash.com/photo-1438032005730-c779502df39b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(17, 24, 32, 0.8);
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+.hero h1 {
+  color: #adaab2;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.scripture {
+  font-style: italic;
+  color: #ccc !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #d4af37;
+  border: 2px solid #1a2530;
+  padding: 10px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #d4af37;
+  color: #c7c6c1;
+}
+
+/* --- Welcome Section --- */
+.welcome {
+  padding: 5rem 10%;
+  background-color: #fcfcfc;
+}
+
+.welcome-content-wrapper {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.welcome-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.welcome-text h4 {
+  color: #1a2530;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #1a2530;
+}
+
+.welcome-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.vision-mission {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.vm-box {
+  background: #fff;
+  padding: 1.5rem;
+  border-left: 4px solid #1a2530;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.vm-title {
+  color: #1a2530;
+  margin-bottom: 0.8rem;
+}
+
+.mission-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #555;
+}
+
+.btn-outline {
+  display: inline-block;
+  background: #1a2530;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-outline:hover {
+  background: #1a2530;
+}
+
+/* Pastor Card */
+/* Update the container to have a strict maximum width */
+/* 1. Remove ANY padding from the card container */
+.pastor-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  margin: 0 auto;
+  padding: 0 !important; /* This forces the removal of any old padding! */
+}
+
+/* 2. Create a specific wrapper for the image */
+.pastor-image-wrapper {
+  width: 100%;
+  height: 350px; 
+  overflow: hidden;
+}
+
+/* 3. Make the image fill the wrapper perfectly */
+.pastor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; 
+  display: block;
+  margin: 0;
+}
+.pastor-info {
+  padding: 1.5rem;
+  background: #1a2530;
+  color: #1a2530;
+}
+
+.pastor-info h3 {
+  color: #1a2530;
+  margin-bottom: 0.2rem;
+}
+
+/* --- Section Headers (Reusable) --- */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h4 {
+  color: #1a2530;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #1a2530;
+  margin: 0.5rem 0 1rem;
+}
+
+.section-header p {
+  color: #666;
+}
+
+/* --- Ministries Preview --- */
+.ministries-preview {
+  padding: 5rem 10%;
+  background-color: #1a2530;
+  color: #fff;
+}
+
+.ministries-preview .section-header h2,
+.ministries-preview .section-header p {
+  color: #fff;
+}
+
+.ministries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.min-card {
+  background: #253342;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.min-card:hover {
+  transform: translateY(-5px);
+  background: #2c3e50;
+}
+
+.min-card span {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.min-icon {
+  font-size: 2.5rem;
+}
+
+/* Icon Colors */
+.icon-blue { color: #3498db; }
+.icon-purple { color: #9b59b6; }
+.icon-pink { color: #e84393; }
+.icon-green { color: #2ecc71; }
+.icon-orange { color: #e67e22; }
+.icon-indigo { color: #3f51b5; }
+.icon-red { color: #e74c3c; }
+.icon-teal { color: #1abc9c; }
+
+.center-btn {
+  text-align: center;
+}
+
+.ministries-preview .btn-outline {
+  background: transparent;
+  border: 2px solid #1a2530;
+  color: #1a2530;
+}
+
+.ministries-preview .btn-outline:hover {
+  background: #1a2530;
+  color: #1a2530;
+}
+
+/* --- Testimonies Section --- */
+.testimonies-section {
+  padding: 5rem 10%;
+  background: #f9f9f9;
+}
+
+.testimonies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimony-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #f0f0f0;
+}
+
+.testimony-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bg-orange { background: #e67e22; }
+.bg-blue { background: #3498db; }
+.bg-purple { background: #9b59b6; }
+
+.testimony-author h4 {
+  color: #1a2530;
+  margin-bottom: 0.2rem;
+}
+
+.testimony-author span {
+  font-size: 0.85rem;
+  color: #1a2530;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.testimony-card p {
+  color: #555;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* --- Bottom CTA --- */
+.bottom-cta {
+  background: #f4f4f4;
+  padding: 5rem 10%;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+}
+
+.bottom-cta h2 {
+  color: #1a2530;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.bottom-cta p {
+  color: #666;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-secondary-dark {
+  background: #fff;
+  color: #1a2530;
+  border: 2px solid #1a2530;
+  padding: 10px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn-secondary-dark:hover {
+  background: #1a2530;
+  color: #fff;
+}

@@ -1,0 +1,162 @@
+
+/* --- LOGIN SCREEN --- */
+.admin-login-container {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f7f6;
+  padding: 2rem;
+}
+
+.admin-login-box {
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  border-top: 4px solid #1a2530;
+}
+
+.admin-login-box h2 {
+  color: #1a2530;
+  margin-bottom: 0.5rem;
+}
+
+.admin-login-box p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-login-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.error-text {
+  color: red !important;
+  font-weight: bold;
+  margin-top: 0.5rem !important;
+}
+
+.admin-container {
+  padding: 4rem 5%;
+  background-color: #f4f7f6;
+  min-height: 80vh;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.admin-header h1 {
+  color: #1a2530;
+  margin-bottom: 0.5rem;
+}
+
+.admin-loading {
+  text-align: center;
+  padding: 5rem;
+  font-size: 1.5rem;
+  color: #1a2530;
+  font-weight: bold;
+}
+
+.admin-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+/* Add this below your existing admin-login-form rules */
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+  padding-right: 60px; /* Make room for the button */
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #1a2530;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.password-toggle-btn:hover {
+  color: #d4af37;
+} 
+.tab-btn {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #fff;
+  border: 2px solid #1a2530;
+  color: #1a2530;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active, .tab-btn:hover {
+  background-color: #1a2530;
+  color: #fff;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.data-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border-top: 4px solid #1a2530;
+}
+
+.data-card h4 {
+  color: #1a2530;
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.data-email, .data-date {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+
+.data-body {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  color: #333;
+  line-height: 1.5;
+}

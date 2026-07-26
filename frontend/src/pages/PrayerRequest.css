@@ -1,0 +1,72 @@
+.prayer-container {
+  padding: 4rem 10%;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 70vh;
+}
+
+.prayer-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.prayer-header h1 {
+  font-size: 2.5rem;
+  color: #1a2530;
+  margin-bottom: 1rem;
+}
+
+.prayer-form {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1a2530;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+.btn-submit {
+  background-color: #1a2530;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-submit:hover {
+  background-color: #1a2530;
+  color: #1a2530;
+}

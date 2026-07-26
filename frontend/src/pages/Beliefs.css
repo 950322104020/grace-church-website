@@ -1,0 +1,63 @@
+.beliefs-page {
+  background-color: #fcfcfc;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+
+.beliefs-hero {
+  background-color: #1a2530;
+  color: white;
+  text-align: center;
+  padding: 5rem 5%;
+}
+
+.beliefs-hero h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.beliefs-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.beliefs-container {
+  max-width: 1200px;
+  margin: -3rem auto 0;
+  padding: 0 5%;
+  position: relative;
+  z-index: 10;
+}
+
+.beliefs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.belief-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  border-top: 4px solid #1a2530;
+  transition: transform 0.3s ease;
+}
+
+.belief-card:hover {
+  transform: translateY(-5px);
+}
+
+.belief-card h2 {
+  color: #1a2530;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.belief-card p {
+  color: #555;
+  line-height: 1.7;
+}
