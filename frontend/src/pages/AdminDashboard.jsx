@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 // Get backend base URL from Vercel environment variables or default to localhost
@@ -6,8 +6,8 @@ const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 const AdminDashboard = () => {
   // 1. STATE VARIABLES FOR DATA
-  const [sermons, setSermons] = useState([]);
-  const [events, setEvents] = useState([]);
+  //const [sermons, setSermons] = useState([]);
+  //const [events, setEvents] = useState([]);
   const [members, setMembers] = useState([]);
 
   // Active tab state
