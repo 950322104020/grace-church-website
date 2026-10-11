@@ -31,7 +31,7 @@ const Navbar = () => {
         <li><Link to="/ministries" onClick={closeMobileMenu}>Ministries</Link></li>
         <li><Link to="/sermons" onClick={closeMobileMenu}>Sermons</Link></li>
         <li><Link to="/events" onClick={closeMobileMenu}>Events</Link></li>
-        <li><Link to="/give" onClick={closeMobileMenu}>Give</Link></li>
+        <li><Link to="/give" onClick={closeMobileMenu}>Offering</Link></li>
         <li><Link to="/contact" onClick={closeMobileMenu}>Contact</Link></li>
         <li><Link to="/membership" onClick={closeMobileMenu}>Membership</Link></li>
         <li className="mobile-cta">

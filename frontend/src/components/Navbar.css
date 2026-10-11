@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
-  background-color: #1a2530;
+  background-color: #de0f08;
   color: white;
   position: relative;
   z-index: 1000;
@@ -13,7 +13,7 @@
   font-family: 'Merriweather', serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1a2530;
+  color: #de0f08;
 }
 
 .navbar-links {
@@ -28,13 +28,13 @@
 }
 
 .navbar-links li a:hover {
-  color: #1a2530;
+  color: #de0f08;
 }
 
 .btn-prayer {
   background-color: transparent;
-  border: 2px solid #1a2530;
-  color: #1a2530;
+  border: 2px solid #de0f08;
+  color: #de0f08;
   padding: 8px 16px;
   border-radius: 4px;
   transition: all 0.3s ease;
@@ -42,14 +42,14 @@
 }
 
 .btn-prayer:hover {
-  background-color: #1a2530;
-  color: #1a2530;
+  background-color: #de0f08;
+  color: #de0f08;
 }
 
 .mobile-menu-icon {
   display: none;
   font-size: 1.8rem;
-  color: #1a2530;
+  color: #de0f08;
   cursor: pointer;
 }
 
@@ -79,11 +79,11 @@
     top: 100%;
     left: -100%;
     width: 100%;
-    background-color: #1a2530;
+    background-color: #991b1b;
     transition: all 0.4s ease;
     padding: 2rem 0;
     text-align: center;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 10px rgba(172, 28, 28, 0.2);
   }
 
   .navbar-links.active {

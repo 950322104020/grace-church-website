@@ -1,8 +1,8 @@
 .footer-advanced {
-  background-color: #0d1522; /* Deep navy/black background */
+  background-color: #de0f08; /* Deep navy/black background */
   padding: 4rem 5%;
   font-family: 'Open Sans', sans-serif;
-  border-top: 4px solid #1a2530; /* Gold accent line at the top */
+  border-top: 4px solid #de0f08; /* Gold accent line at the top */
 }
 
 .footer-grid {
@@ -22,7 +22,7 @@
 }
 
 .footer-brand .footer-logo span {
-  color: #1a2530; /* Gold */
+  color: white; 
   display: block;
   font-size: 1.1rem;
   letter-spacing: 2px;
@@ -53,28 +53,28 @@
 
 /* Quick Links */
 .footer-links a {
-  color: #90cdf4; /* Light blue text */
+  color: white; 
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1.05rem;
 }
 
 .footer-links a:hover {
-  color: #1a2530;
+  color: white;
 }
 
 /* Service Times */
 .footer-service-times li {
   display: flex;
   justify-content: space-between;
-  color: #90cdf4;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color:white;
+  border-bottom: 1px solid white;
   padding-bottom: 0.5rem;
   font-size: 1.05rem;
 }
 
 .time-highlight, .time-tba {
-  color: #1a2530;
+  color: white;
   font-weight: bold;
 }
 
@@ -83,7 +83,7 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  color: #90cdf4;
+  color: white;
   font-size: 1.05rem;
 }
 

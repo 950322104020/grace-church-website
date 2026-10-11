@@ -6,10 +6,15 @@ const About = () => {
   return (
     <div className="about-container">
       {/* 1. About Hero Section */}
-      <section className="about-hero">
+      <section 
+        className="about-hero"
+        style={{
+          backgroundImage: `linear-gradient(rgba(17, 24, 32, 0.45), rgba(17, 24, 32, 0.65)), url('/church-family.jpg')`
+        }}
+      >
         <div className="about-hero-content">
           <h4>GRACE CHURCH OF GOD</h4>
-          <h1>About<br/>Grace Church of God</h1>
+          <h1>About<br />Grace Church of God</h1>
           <p>A vibrant community raising disciples who walk in faith, demonstrate God's love, and impact their generation.</p>
           <Link to="/contact" className="btn-primary">Join Us Sunday</Link>
         </div>
@@ -17,14 +22,14 @@ const About = () => {
 
       {/* 2. Vision, Mission & Story Section */}
       <section className="about-details">
-        
+
         {/* Left Column: Purpose */}
         <div className="about-column">
           <div className="column-header">
             <h4>OUR PURPOSE</h4>
             <h2>Vision & Mission</h2>
           </div>
-          
+
           <div className="purpose-card">
             <h3 className="purpose-title"><span>+</span> Our Vision</h3>
             <p>To raise disciples of Jesus Christ who walk in faith, demonstrate God's love, and impact their generation through the power of the Holy Spirit.</p>
@@ -48,7 +53,7 @@ const About = () => {
             <h4>OUR HISTORY</h4>
             <h2>Our Story</h2>
           </div>
-          
+
           <div className="story-content">
             <p>
               Grace Church of God was founded with a simple yet powerful vision — to create a community where people could encounter the living God, grow in His Word, and be equipped to make a difference in the world around them.
@@ -60,7 +65,7 @@ const About = () => {
               From our Sunday worship gatherings to our weekday small groups and outreach programs, everything we do is rooted in a deep love for God and people.
             </p>
             <blockquote className="story-quote">
-              "For we walk by faith, not by sight." <br/>
+              "For we walk by faith, not by sight." <br />
               <span>— 2 Corinthians 5:7</span>
             </blockquote>
           </div>
@@ -88,25 +93,25 @@ const About = () => {
             </div>
           </div>
 
-          {/* Placeholder for future leader 1 */}
+          {/* Associate Pastor */}
           <div className="team-card">
-            <div className="team-image-wrapper placeholder-bg">
-              <span>Photo Coming Soon</span>
+            <div className="team-image-wrapper">
+              <img src="/associate-pastor.jpg" alt="Associate Pastor" className="team-image" />
             </div>
             <div className="team-info">
-              <h3>Associate Pastor</h3>
+              <h3>Associate Pastor John Pariyar</h3>
               <p className="team-role">Pastoral Care</p>
               <p className="team-bio">Dedicated to serving the congregation through prayer, visitation, and overseeing our thriving small group ministries.</p>
             </div>
           </div>
 
-          {/* Placeholder for future leader 2 */}
+          {/* Worship Leader */}
           <div className="team-card">
-            <div className="team-image-wrapper placeholder-bg">
-              <span>Photo Coming Soon</span>
+            <div className="team-image-wrapper">
+              <img src="/worship-leader.jpg" alt="Worship Leader Ajeet Masih" className="team-image" />
             </div>
             <div className="team-info">
-              <h3>Worship Leader</h3>
+              <h3>Worship Leader Ajeet Masih</h3>
               <p className="team-role">Worship Ministry</p>
               <p className="team-bio">Leading the church family into the presence of God every Sunday through anointed music and heartfelt praise.</p>
             </div>

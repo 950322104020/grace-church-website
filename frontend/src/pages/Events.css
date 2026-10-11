@@ -5,7 +5,7 @@
 }
 
 .events-hero {
-  background-color: #1a2530;
+  background-color:#de0f08;
   color: white;
   text-align: center;
   padding: 5rem 5%;
@@ -81,7 +81,7 @@
 .event-meta {
   display: flex;
   gap: 1.5rem;
-  color: #666;
+  color: #de0f08;
   font-weight: bold;
   margin-bottom: 1rem;
   font-size: 0.95rem;

@@ -5,10 +5,9 @@
 }
 
 .about-hero {
-  background-image: url('https://images.unsplash.com/photo-1438032005730-c779502df39b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-color: #1a2530;
   background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
+  background-position: center 30%;
   padding: 6rem 5%;
   text-align: center;
   color: white;
@@ -20,7 +19,7 @@
 }
 
 .about-hero h4 {
-  color: #e6c93c; /* Gold */
+  color: #e0e3e3; /* Gold */
   letter-spacing: 2px;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -58,7 +57,7 @@
 }
 
 .column-header h4 {
-  color: #1a2530;
+  color: #d42d1a;
   letter-spacing: 2px;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -67,7 +66,7 @@
 
 .column-header h2 {
   font-size: 2.5rem;
-  color: #1a2530;
+  color: #d42d1a;
 }
 
 /* --- Purpose Cards (Left Column) --- */
@@ -84,13 +83,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #1a2530;
+  color: #d42d1a;
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
 
 .purpose-title span {
-  color: #1a2530;
+  color: #d42d1a;
   font-weight: bold;
 }
 
@@ -112,7 +111,7 @@
 
 .mission-list li::before {
   content: '✓';
-  color: #1a2530;
+  color: #d42d1a;
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -129,9 +128,9 @@
 .story-quote {
   background: #f4f4f4;
   padding: 1.5rem;
-  border-left: 4px solid #1a2530;
+  border-left: 4px solid #d42d1a;
   font-style: italic;
-  color: #333;
+  color: #d42d1a;
   font-size: 1.1rem;
   margin-top: 2rem;
 }
@@ -141,7 +140,7 @@
   margin-top: 0.5rem;
   font-size: 0.9rem;
   font-weight: bold;
-  color: #1a2530;
+  color: #d42d1a;
 }
 
 /* --- Mobile Responsiveness --- */
@@ -169,7 +168,7 @@
 }
 
 .leadership-header h4 {
-  color: #1a2530;
+  color: #d42d1a;
   letter-spacing: 2px;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -178,7 +177,7 @@
 
 .leadership-header h2 {
   font-size: 2.5rem;
-  color: #1a2530;
+  color: #d42d1a;
   margin-bottom: 1rem;
 }
 
@@ -200,7 +199,7 @@
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 20px #d42d1a;
   transition: transform 0.3s ease;
 }
 
@@ -222,7 +221,7 @@
 }
 
 .placeholder-bg {
-  background-color: #2c3e50;
+  background-color: #d42d1a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,13 +235,13 @@
 }
 
 .team-info h3 {
-  color: #1a2530;
+  color: #d42d1a;
   margin-bottom: 0.2rem;
   font-size: 1.4rem;
 }
 
 .team-role {
-  color: #1a2530;
+  color: #d42d1a;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.85rem;

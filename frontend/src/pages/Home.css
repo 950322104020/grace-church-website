@@ -1,10 +1,11 @@
 /* --- Hero Section --- */
 .hero {
-  height: 80vh;
+  height: 85vh;
+  min-height: 560px;
   background-color: #1a2530;
-  background-image: url('https://images.unsplash.com/photo-1438032005730-c779502df39b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
   background-size: cover;
-  background-position: center;
+  background-position: center 30%;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,28 +13,32 @@
 }
 
 .hero-overlay {
-  background: rgba(17, 24, 32, 0.8);
-  padding: 4rem 2rem;
-  border-radius: 8px;
-  max-width: 800px;
+  background: transparent;
+  padding: 2rem 1.5rem;
+  max-width: 900px;
 }
 
 .hero h1 {
-  color: #adaab2;
+  color: #ffffff;
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.85), 0 1px 4px rgba(0, 0, 0, 0.9);
+  font-weight: 800;
 }
 
 .hero p {
-  color: #fff;
-  font-size: 1.1rem;
+  color: #ffffff;
+  font-size: 1.15rem;
   margin-bottom: 1.5rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
+  font-weight: 500;
 }
 
 .scripture {
   font-style: italic;
-  color: #ccc !important;
+  color: #f3f3f3 !important;
   margin-bottom: 2.5rem !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
 }
 
 .hero-buttons {
@@ -43,18 +48,19 @@
 }
 
 .btn-secondary {
-  background-color: transparent;
-  color: #d4af37;
-  border: 2px solid #1a2530;
+  background-color: rgba(17, 24, 32, 0.75);
+  color: #fff;
+  border: 2px solid #d42d1a;
   padding: 10px 24px;
   border-radius: 5px;
   font-weight: bold;
   transition: all 0.3s;
+  backdrop-filter: blur(4px);
 }
 
 .btn-secondary:hover {
-  background-color: #d4af37;
-  color: #c7c6c1;
+  background-color: #d42d1a;
+  color: #ffffff;
 }
 
 /* --- Welcome Section --- */
@@ -105,11 +111,11 @@
   background: #fff;
   padding: 1.5rem;
   border-left: 4px solid #1a2530;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 10px #00000008;
 }
 
 .vm-title {
-  color: #1a2530;
+  color: #d42d1a;
   margin-bottom: 0.8rem;
 }
 
@@ -130,10 +136,22 @@
 }
 
 .btn-outline:hover {
-  background: #1a2530;
+  background: #d42d1a;
 }
 
-/* Pastor Card */
+/* Welcome Section Cards Column */
+.welcome-cards-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 280px;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Pastor Card & Church Family Card */
 /* Update the container to have a strict maximum width */
 /* 1. Remove ANY padding from the card container */
 .pastor-card {
@@ -144,7 +162,7 @@
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 20px rgba(202, 75, 6, 0.08);
   margin: 0 auto;
   padding: 0 !important; /* This forces the removal of any old padding! */
 }
@@ -167,8 +185,8 @@
 }
 .pastor-info {
   padding: 1.5rem;
-  background: #1a2530;
-  color: #1a2530;
+  background: #d42d1a;
+  color: #fff;
 }
 
 .pastor-info h3 {
@@ -183,7 +201,7 @@
 }
 
 .section-header h4 {
-  color: #1a2530;
+  color: #de0f08;
   letter-spacing: 2px;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -191,18 +209,18 @@
 
 .section-header h2 {
   font-size: 2.5rem;
-  color: #1a2530;
+  color: #de0f08;
   margin: 0.5rem 0 1rem;
 }
 
 .section-header p {
-  color: #666;
+  color: #de0f08;
 }
 
 /* --- Ministries Preview --- */
 .ministries-preview {
   padding: 5rem 10%;
-  background-color: #1a2530;
+  background-color: #de0f08;
   color: #fff;
 }
 
@@ -219,7 +237,7 @@
 }
 
 .min-card {
-  background: #253342;
+  background: #18324e;
   padding: 2rem 1rem;
   border-radius: 8px;
   text-align: center;

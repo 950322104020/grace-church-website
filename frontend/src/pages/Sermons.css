@@ -5,7 +5,7 @@
 }
 
 .sermons-header {
-  background-color: #1a2530;
+  background-color: #de0f08;
   color: white;
   text-align: center;
   padding: 5rem 5%;
@@ -13,7 +13,7 @@
 
 .sermons-header h1 {
   font-size: 3rem;
-  color: #1a2530;
+  color: white;
   margin-bottom: 1rem;
 }
 
@@ -54,7 +54,7 @@
   position: relative;
   height: 200px;
   width: 100%;
-  background-color: #333;
+  background-color:#de0f08;
 }
 
 .sermon-thumbnail img {
@@ -79,7 +79,7 @@
 }
 
 .sermon-date {
-  color: #1a2530;
+  color: #de0f08;
   font-weight: bold;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -87,13 +87,13 @@
 }
 
 .sermon-info h2 {
-  color: #1a2530;
+  color: #de0f08;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .sermon-desc {
-  color: #666;
+  color: #de0f08;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;

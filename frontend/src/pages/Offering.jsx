@@ -1,25 +1,25 @@
 import React from 'react';
-import './Give.css';
+import './Offering.css';
 
-const Give = () => {
+const Offering = () => {
   return (
-    <div className="give-page">
-      <div className="give-hero">
+    <div className="offering-page">
+      <div className="offering-hero">
         <h1>Worship Through Giving</h1>
         <p>Your generosity helps us continue the work of the ministry and impact our community.</p>
       </div>
 
-      <div className="give-container">
-        <div className="give-methods-grid">
+      <div className="offering-container">
+        <div className="offering-methods-grid">
           
-          <div className="give-method-card">
+          <div className="offering-method-card">
             <div className="icon-wrapper">💻</div>
             <h2>Give Online</h2>
             <p>Securely give a one-time or recurring gift using our online portal.</p>
             <button className="btn-primary">Donate Now</button>
           </div>
 
-          <div className="give-method-card">
+          <div className="offering-method-card">
             <div className="icon-wrapper">🏦</div>
             <h2>Bank Transfer</h2>
             <p>You can transfer directly to the church account using these details:</p>
@@ -31,7 +31,7 @@ const Give = () => {
             </div>
           </div>
 
-          <div className="give-method-card">
+          <div className="offering-method-card">
             <div className="icon-wrapper">📍</div>
             <h2>In Person</h2>
             <p>Give during our Sunday worship service at our physical location.</p>
@@ -47,4 +47,4 @@ const Give = () => {
   );
 };
 
-export default Give;
+export default Offering;

@@ -8,7 +8,12 @@ const Home = () => {
   return (
     <div className="home-container">
       {/* 1. Enhanced Hero Section */}
-      <section className="hero">
+      <section 
+        className="hero"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.35)), url('/church-family.jpg')`
+        }}
+      >
         <div className="hero-overlay">
           <h1>Welcome to Grace Church of God</h1>
           <p>We are delighted to welcome you. Our desire is to see people encounter Jesus, grow in faith, and walk in the victory He has prepared for them.</p>
@@ -48,13 +53,25 @@ const Home = () => {
             <Link to="/about" className="btn-outline">Learn More &rarr;</Link>
           </div>
           
-          <div className="pastor-card">
-            <div className="pastor-image-wrapper">
-              <img src="/pastor.jpg" alt="Pastor Gore Pariyar" className="pastor-image" />
+          <div className="welcome-cards-col">
+            <div className="pastor-card">
+              <div className="pastor-image-wrapper">
+                <img src="/church-family.jpg" alt="Grace Church Family" className="pastor-image" style={{ objectPosition: 'center 35%' }} />
+              </div>
+              <div className="pastor-info">
+                <h3>Our Church Family</h3>
+                <p>Grace Church of God</p>
+              </div>
             </div>
-            <div className="pastor-info">
-              <h3>Pastor Gore Pariyar</h3>
-              <p>Senior Pastor</p>
+
+            <div className="pastor-card">
+              <div className="pastor-image-wrapper">
+                <img src="/pastor.jpg" alt="Pastor Gore Pariyar" className="pastor-image" />
+              </div>
+              <div className="pastor-info">
+                <h3>Pastor Gore Pariyar</h3>
+                <p>Senior Pastor</p>
+              </div>
             </div>
           </div>
         </div>

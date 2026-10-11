@@ -9,14 +9,15 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #333;
+  color: #de0f08; /* Kept readable dark charcoal for general body text */
   background-color: #f9f9f9;
   line-height: 1.6;
 }
 
+/* Headings in Deep Crimson Red */
 h1, h2, h3, h4 {
   font-family: 'Merriweather', serif;
-  color: #1a2530; 
+  color: #b91c1c; /* Deep Red */
 }
 
 a {
@@ -30,9 +31,9 @@ a {
   min-height: 100vh;
 }
 
-/* Reusable Buttons */
+/* Reusable Buttons - Red Palette */
 .btn-primary {
-  background-color: #1a2530; /* Gold */
+  background-color: #dc2626; /* Crimson Red */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -43,8 +44,9 @@ a {
 }
 
 .btn-primary:hover {
-  background-color: #b5952f;
+  background-color: #991b1b; /* Darker Red on hover */
 }
+
 /* --- GLOBAL MOBILE ADJUSTMENTS --- */
 @media screen and (max-width: 768px) {
   /* Reduce padding on all major containers */

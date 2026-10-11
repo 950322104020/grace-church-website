@@ -16,7 +16,7 @@ import Ministries from './pages/Ministries';
 import Sermons from './pages/Sermons';
 import Events from './pages/Events';
 import Gallery from './pages/Gallery';
-import Give from './pages/Give';
+import Offering from './pages/Offering';
 import Contact from './pages/Contact';
 import PrayerRequest from './pages/PrayerRequest';
 import AdminDashboard from './pages/AdminDashboard';
@@ -35,7 +35,7 @@ function App() {
             <Route path="/sermons" element={<Sermons />} />
             <Route path="/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/give" element={<Give />} />
+            <Route path="/give" element={<Offering />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/prayer-request" element={<PrayerRequest />} />
             <Route path="/admin" element={<AdminDashboard />} />
