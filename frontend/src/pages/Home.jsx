@@ -8,15 +8,13 @@ const Home = () => {
   return (
     <div className="home-container">
       {/* 1. Enhanced Hero Section */}
-      <section 
+      <section
         className="hero"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.35)), url('/church-family.jpg')`
         }}
       >
         <div className="hero-overlay">
-          <h1>Welcome to Grace Church of God</h1>
-          <p>We are delighted to welcome you. Our desire is to see people encounter Jesus, grow in faith, and walk in the victory He has prepared for them.</p>
           <p className="scripture">"For we walk by faith, not by sight." - 2 Corinthians 5:7</p>
           <div className="hero-buttons">
             <Link to="/about" className="btn-secondary">Who We Are</Link>
@@ -34,7 +32,7 @@ const Home = () => {
             <p className="welcome-intro">
               Grace Church of God is a vibrant community of believers committed to seeing lives transformed by the power of the Gospel.
             </p>
-            
+
             <div className="vision-mission">
               <div className="vm-box">
                 <h3 className="vm-title">Our Vision</h3>
@@ -52,7 +50,7 @@ const Home = () => {
             </div>
             <Link to="/about" className="btn-outline">Learn More &rarr;</Link>
           </div>
-          
+
           <div className="welcome-cards-col">
             <div className="pastor-card">
               <div className="pastor-image-wrapper">
@@ -84,18 +82,18 @@ const Home = () => {
           <h2>Find Your Place to Serve</h2>
           <p>We have a place for everyone. Discover a ministry where you can grow and make a difference.</p>
         </div>
-        
+
         <div className="ministries-grid">
-          <div className="min-card"><FaChild className="min-icon icon-blue"/> <span>Sunday School</span></div>
-          <div className="min-card"><FaUsers className="min-icon icon-purple"/> <span>Youth Ministry</span></div>
-          <div className="min-card"><FaFemale className="min-icon icon-pink"/> <span>Women's Fellowship</span></div>
-          <div className="min-card"><FaMale className="min-icon icon-green"/> <span>Men's Fellowship</span></div>
-          <div className="min-card"><FaMusic className="min-icon icon-orange"/> <span>Worship Ministry</span></div>
-          <div className="min-card"><FaPray className="min-icon icon-indigo"/> <span>Prayer Ministry</span></div>
-          <div className="min-card"><FaGlobe className="min-icon icon-red"/> <span>Evangelism Ministry</span></div>
-          <div className="min-card"><FaVideo className="min-icon icon-teal"/> <span>Media Ministry</span></div>
+          <div className="min-card"><FaChild className="min-icon icon-blue" /> <span>Sunday School</span></div>
+          <div className="min-card"><FaUsers className="min-icon icon-purple" /> <span>Youth Ministry</span></div>
+          <div className="min-card"><FaFemale className="min-icon icon-pink" /> <span>Women's Fellowship</span></div>
+          <div className="min-card"><FaMale className="min-icon icon-green" /> <span>Men's Fellowship</span></div>
+          <div className="min-card"><FaMusic className="min-icon icon-orange" /> <span>Worship Ministry</span></div>
+          <div className="min-card"><FaPray className="min-icon icon-indigo" /> <span>Prayer Ministry</span></div>
+          <div className="min-card"><FaGlobe className="min-icon icon-red" /> <span>Evangelism Ministry</span></div>
+          <div className="min-card"><FaVideo className="min-icon icon-teal" /> <span>Media Ministry</span></div>
         </div>
-        
+
         <div className="center-btn">
           <Link to="/ministries" className="btn-outline">Explore All Ministries &rarr;</Link>
         </div>

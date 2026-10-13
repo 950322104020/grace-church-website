@@ -4,8 +4,16 @@ const Sermon = require('../models/Sermon');
 // @route   POST /api/sermons
 const addSermon = async (req, res) => {
   try {
-    const { title, videoLink, date, description } = req.body;
-    const newSermon = await Sermon.create({ title, videoLink, date, description });
+    const { title, videoLink, videoUrl, date, description, speaker } = req.body;
+    const finalVideoLink = videoLink || videoUrl;
+    const finalDate = date || new Date();
+    const newSermon = await Sermon.create({ 
+      title, 
+      videoLink: finalVideoLink, 
+      date: finalDate, 
+      description,
+      speaker 
+    });
     res.status(201).json({ success: true, data: newSermon, message: 'Sermon added successfully' });
   } catch (error) {
     console.error('Error saving sermon:', error);

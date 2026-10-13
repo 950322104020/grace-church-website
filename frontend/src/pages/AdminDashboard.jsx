@@ -36,7 +36,8 @@ const AdminDashboard = () => {
   const fetchSermons = async () => {
     try {
       const res = await axios.get(`${API_BASE_URL}/api/sermons`);
-      setSermons(res.data);
+      const sermonList = Array.isArray(res.data) ? res.data : (res.data?.data || []);
+      setSermons(sermonList);
     } catch (err) {
       console.error('Error fetching sermons:', err);
     }
@@ -45,7 +46,8 @@ const AdminDashboard = () => {
   const fetchEvents = async () => {
     try {
       const res = await axios.get(`${API_BASE_URL}/api/events`);
-      setEvents(res.data);
+      const eventList = Array.isArray(res.data) ? res.data : (res.data?.data || []);
+      setEvents(eventList);
     } catch (err) {
       console.error('Error fetching events:', err);
     }
@@ -55,7 +57,11 @@ const AdminDashboard = () => {
   const handleAddSermon = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${API_BASE_URL}/api/sermons`, sermonForm);
+      await axios.post(`${API_BASE_URL}/api/sermons`, {
+        ...sermonForm,
+        videoLink: sermonForm.videoUrl || sermonForm.videoLink,
+        date: new Date()
+      });
       alert('Sermon added successfully!');
       setSermonForm({ title: '', speaker: '', videoUrl: '', description: '' });
       fetchSermons(); // Refresh list

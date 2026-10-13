@@ -6,15 +6,14 @@ const About = () => {
   return (
     <div className="about-container">
       {/* 1. About Hero Section */}
-      <section 
+      <section
         className="about-hero"
         style={{
           backgroundImage: `linear-gradient(rgba(17, 24, 32, 0.45), rgba(17, 24, 32, 0.65)), url('/church-family.jpg')`
         }}
       >
         <div className="about-hero-content">
-          <h4>GRACE CHURCH OF GOD</h4>
-          <h1>About<br />Grace Church of God</h1>
+
           <p>A vibrant community raising disciples who walk in faith, demonstrate God's love, and impact their generation.</p>
           <Link to="/contact" className="btn-primary">Join Us Sunday</Link>
         </div>
